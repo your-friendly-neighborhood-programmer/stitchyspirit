@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Stitchy Spirit</title>
+        <meta property="og:title" content="Stitchy Spirit">
+        <meta property="og:description" content="Custom Crochet Creations">
+        <meta property="og:image" content="./favicon.jpeg">
+        <title>My Website</title>
+        <link rel = "icon" href = "./favicon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">  
+        <style>
+            html {
+                background-color:rgb(255, 233, 245)
+            }
+            header {
+                background-color: rgb(130, 36, 79);
+                display: block;
+                border: 2px solid black;
+                border-radius: 10px;
+                height: 150px;
+            }
+            header div {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                color: rgb(255, 233, 245);
+                font-family: "Charmonman", serif;
+                position: relative;
+                top: -45px;
+            }
+            header ul {
+                display: flex;
+                justify-content: space-around;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                height: 40px;
+                gap: 10px;
+                position: relative;
+                top: -100px;
+            }
+            header ul a {
+                text-decoration: none;
+                background-color: rgb(255, 233, 245);
+                color: rgb(130, 36, 79);
+                border: 2px solid black;
+                border-radius: 10px;
+                width: 100%;
+                text-align: center;
+                height: 30px;
+                box-shadow: 2px 2px 2px black;
+            }
+            header ul a:hover {
+                background-color: rgb(203,171,201);
+            }
+            header p {
+                position: relative;
+                top: -10px;
+                padding: 2px;
+                font-weight: bold;
+            }
+            footer {
+                background-color:rgb(130, 36, 79);
+                color:rgb(255, 233, 245);
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+            footer a {
+                color:rgb(255, 233, 245)
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas: "top top" "middle1 middle2" "middle3 middle4" "bottom bottom";
+                background-image: url("./backgroundimage.png");
+                background-size: cover;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin-top: 10px;
+                align-content: center;
+                font-family: "Charmonman", serif;
+            }
+            #top {
+                grid-area: top;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            #middle1 {
+                grid-area: middle1;
+                align-content: center;
+            }
+            #middle1 video {
+                width: 85%;
+                border: 2px solid black;
+                border-radius: 30%;
+                margin-left: 10px;
+            }
+            #middle2 {
+                grid-area: middle2;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 10px;
+                font-weight: bold;
+            }
+            #middle3 {
+                grid-area: middle3;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 10px;
+                font-weight: bold;
+                align-content: center;
+            }
+            #middle4 {
+                grid-area: middle4;
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-areas: "description photo";
+                gap: 10px;
+                padding: 10px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            #photo img {
+                grid-area: photo;
+                width: 100%;
+                border: 2px solid black;
+                border-radius: 30%;
+            }
+            #photo {
+                align-content: center;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <div><h1>Stitchy Spirit</h1></div>
+            <ul class = "nav">
+                <a href = "./about.html"><p>About</p></a>
+                <a href = "./projects.html"><p>Portfolio</p></a>
+                <a href = "./contact.html"><p>Contact</p></a>
+            </ul>
+        </header>
+        <div class = "container">
+            <div id = "top"><h1>High Quality, Hand-Made, Custom Crochet Products</h1></div>
+            <div id = "middle1">
+                <div><video autoplay><source src = "./yarn.mp4"></video></div>
+            </div>
+            <div id = "middle2">
+                <div><p>Stitchy Spirit is a small business that specializes in creating custom crochet products. We offer a wide variety of products, including stuffed animals, blankets, hats, scarves, and more. Our products are made with high-quality materials and are designed to last. Whether you're looking for a unique gift or just want to treat yourself, Stitchy Spirit has something for everyone. Contact us today to place an order or learn more about our products.</p></div>
+            </div>
+            <div id = "middle3">
+                <h1>About The Artist</h1>
+            </div>
+            <div id = "middle4">
+                <div id = "description">
+                    <p>My name is Victoria. I am a homeschooling mom, U.S. Air Force Veteran, and M.S. Data Science Student.  I love what I do. I started crocheting in 2014 as a way to cope with the struggle of returning from service after being medically retired. I learned by following along with YouTube videos until I got the hang of it. Who knew I would fall in love with the art. It has since become more than a hobby, and now provides for my family.</p>
+                    <p>Thank you for checking out my business, and thank you for your support.</p>
+                </div>
+                <div id = "photo">
+                    <img src = "./photo.jpeg" alt = "Photo of the artist">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Stitchy Spirit</p>
+            <p>Phone: <a href = "tel:1-949-572-0626">949-572-0626</a></p>
+            <p>Email: <a href = "mailto:contact@stitchyspirit.com">contact@stitchyspirit.com</a></p>
+            <p>Copyright © 2024 Stitchy Spirit. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
