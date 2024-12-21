@@ -27,7 +27,6 @@
                 color:rgb(130, 36, 79);
                 border: 2px solid black;
                 box-shadow: 3px 3px 3px black;
-                position: relative;
             }
             .navbar-toggler:hover {
                 color:rgb(232, 178, 208);
@@ -40,7 +39,6 @@
                 font-size: 1.7rem;
                 color:rgb(130, 36, 79);
                 background-color:rgb(232, 178, 208);
-                width: 180px;
                 text-align: center;
                 border: 2px solid black;
                 border-radius: 10px;
@@ -56,8 +54,10 @@
                 background-color:rgb(150, 82, 114);
             }
             .navbar-nav {
-                gap: 80px;
-                margin: auto;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                justify-content: space-evenly;
                 z-index: 1;
             }
             #intro {
