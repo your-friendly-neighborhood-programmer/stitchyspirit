@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Lobster&family=Niconne&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .container-fluid {
+                background-color: rgb(130, 36, 79);
+                height: 120px;
+            }
+            .navbar-brand {
+                color: rgb(232, 178, 208);
+                font-family: "Charmonman", cursive;
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            .navbar-toggler {
+                background-color:rgb(232, 178, 208);
+                color:rgb(130, 36, 79);
+                border: 2px solid black;
+                box-shadow: 3px 3px 3px black;
+                position: relative;
+            }
+            .navbar-toggler:hover {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .nav-link {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                font-family: "Lobster", cursive;
+                font-size: 1.7rem;
+                color:rgb(130, 36, 79);
+                background-color:rgb(232, 178, 208);
+                width: 180px;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px black;
+                z-index: 1;
+            }
+            .nav-link:hover {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .nav-link.active {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .navbar-nav {
+                gap: 80px;
+                margin: auto;
+                z-index: 1;
+            }
+            #intro {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 100%;
+                background-image: url("./backgroundimage.png");
+                background-size: cover;
+                margin-top: 0px;
+                flex: 1;
+                gap: 10px;
+                align-content: center;
+                justify-content: center;
+            }
+            #heading {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                font-family: "Lobster", cursive;
+                font-weight: bold;
+                text-align: center;
+                margin: auto;
+                padding: 10px;
+                flex: 1;
+                line-height: 1.5;
+                font-size: 2.8rem;
+            }
+            hr {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                border: 2px solid rgb(130, 36, 79);
+            }
+            footer {
+                background-color:rgb(130, 36, 79);
+                color:rgb(255, 233, 245);
+                text-align: center;
+            }
+            footer a {
+                color:rgb(255, 233, 245);
+            }
+            footer a:hover {
+                color: black;
+            }
+            #abstitchy {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                margin: 20px;
+            }
+            #abstitchy img {
+                width: 25%;
+                border: 2px solid black;
+                border-radius: 50%;
+                float: left;
+            }
+            #abstitchy p {
+                font-family: "Lobster", cursive;
+                line-height: 2;
+                font-size: 1.8rem;
+                text-align: center;
+                letter-spacing: 1px;
+                margin-top: 10px;
+            }
+            #abstitchy a {
+                color:rgb(130, 36, 79);
+                font-weight: bold;
+            }
+            #abstitchy a:hover {
+                color:rgb(150, 82, 114);
+            }
+            #artist {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                font-family: "Lobster", cursive;
+                margin: 20px;
+            }
+            #artist img {
+                width: 25%;
+                border: 2px solid black;
+                border-radius: 50%;
+                float: right;
+            }
+            #artist p {
+                font-size: 1.8rem;
+                line-height: 2;
+                text-align: center;
+                margin-top: 10px;
+                letter-spacing: 1px;
+            }
+            #artist h1 {
+                text-align: center;
+                font-weight: bold;
+                font-size: 3rem;
+                float: top;
+            }
+            #artist a {
+                color:rgb(130, 36, 79);
+                font-weight: bold;
+            }
+            #artist a:hover {
+                color:rgb(150, 82, 114);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Stitchy Spirit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="./info.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        
+          <div id="intro">
+            <h1 id="heading">High Quality, Handmade, Custom Crocheted Products</h1>
+            <div id="abstitchy">
+            <img src="./yarn.png" alt="Yarn">
+            <p>Stitchy Spirit is a small business that specializes in creating custom crocheted <a href="./portfolio.html">products</a>. We offer a wide variety of items, including stuffed animals, blankets, hats, scarves, and more. Our products are made with high-quality materials and are designed to last.</p> 
+            <p>Whether you're looking for a unique gift or just want to treat yourself, Stitchy Spirit can make your vision come to life. <a href="./info.html">Contact</a> us today to place an order or learn more about our products.</p></div>
+            <hr />
+            <div id="artist">
+            <h1>About the Artist</h1>
+            <img src="./photo.jpeg" alt="Photo of the Artist">
+            <p>My name is Victoria. I am a homeschooling mom, U.S. Air Force Veteran, and M.S. Data Science Student.  I love what I do. I started crocheting in 2014 as a way to cope with the struggle of returning from service after being medically retired.</p>
+            <p>I learned to crochet by following along with YouTube videos until I got the hang of it. Who knew I would fall in love with the art. It has since become more than a hobby, and now provides for my family.</p>
+            <p>Check out my <a href="./portfolio.html">portfolio</a>!</p></div>
+          </div>
+          <footer>
+            <h3 style="font-family: 'Charmonman', cursive; font-weight: bold; padding: 10px;">Stitchy Spirit</h3>
+            <p>Text: <a href = "sms:+19495720626">+1-949-572-0626</a></p>
+            <p>Call: <a href="tel:+19495720626">+1-949-572-0626</a></p>
+            <p>Email: <a href = "mailto:contact@stitchyspirit.com">contact@stitchyspirit.com</a></p>
+            <p>Copyright © 2024 Stitchy Spirit. All Rights Reserved.</p>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
