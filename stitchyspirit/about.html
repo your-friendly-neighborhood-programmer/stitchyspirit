@@ -2,19 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Stitchy Spirit - Home</title>
-        <meta property="og:title" content="Stitchy Spirit">
-        <meta property="og:description" content="Custom Crochet Products">
-        <meta property="og:image" content="./favicon.jpeg">
-        <link rel = "icon" href = "./favicon.jpeg">
+        <title>Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Lobster&family=Niconne&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
-            html {
-                background-color: rgb(130, 36, 79);
-            }
             .container-fluid {
                 background-color: rgb(130, 36, 79);
                 height: 200px;
@@ -64,20 +57,15 @@
                 z-index: 1;
             }
             #intro {
-                display: grid;
-                grid-template-columns: 1fr;
+                display: block;
                 width: 100%;
                 background-image: url("./backgroundimage.png");
                 background-size: cover;
                 margin-top: 0px;
                 flex: 1;
                 gap: 10px;
-                align-content: center;
-                justify-content: center;
             }
             #heading {
-                grid-column-start: 1;
-                grid-column-end: 4;
                 font-family: "Lobster", cursive;
                 font-weight: bold;
                 text-align: center;
@@ -96,7 +84,6 @@
                 background-color:rgb(130, 36, 79);
                 color:rgb(255, 233, 245);
                 text-align: center;
-                padding: 20px;
             }
             footer a {
                 color:rgb(255, 233, 245);
@@ -105,15 +92,29 @@
                 color: black;
             }
             #abstitchy {
-                grid-column-start: 1;
-                grid-column-end: 4;
+                width: 100%;
                 margin: 20px;
+                padding: 20px;
             }
             #abstitchy img {
-                width: 25%;
+                height: 150px;
+                width: 150px;
                 border: 2px solid black;
                 border-radius: 50%;
-                float: left;
+                margin: auto;
+            }
+            #abstitychy #portfolio-carousel {
+                height: 150px;
+                width: 150px;
+                border: 2px solid black;
+                border-radius: 50%;
+                margin: auto;
+            }
+            #carousel-inner {
+                height: 150px;
+                width: 150px;
+                border: 2px solid black;
+                border-radius: 50%;
             }
             #abstitchy p {
                 font-family: "Lobster", cursive;
@@ -125,6 +126,7 @@
             }
             #abstitchy a {
                 color:rgb(130, 36, 79);
+                font-weight: bold;
             }
             #abstitchy a:hover {
                 color:rgb(150, 82, 114);
@@ -136,7 +138,8 @@
                 margin: 20px;
             }
             #artist img {
-                width: 25%;
+                width: 150px;
+                height: 150px;
                 border: 2px solid black;
                 border-radius: 50%;
                 float: right;
@@ -156,6 +159,7 @@
             }
             #artist a {
                 color:rgb(130, 36, 79);
+                font-weight: bold;
             }
             #artist a:hover {
                 color:rgb(150, 82, 114);
@@ -182,15 +186,115 @@
           <div id="intro">
             <h1 id="heading">High Quality, Handmade, Custom Crocheted Products</h1>
             <div id="abstitchy">
-            <img src="./yarn.png" alt="Yarn">
-            <p>Stitchy Spirit is a small business that specializes in creating custom crocheted <a href="./projects.html">products</a>. We offer a wide variety of items, including stuffed animals, blankets, hats, scarves, and more. Our products are made with high-quality materials and are designed to last.</p> 
-            <p>Whether you're looking for a unique gift or just want to treat yourself, Stitchy Spirit can make your vision come to life. <a href="./contact.html">Contact</a> us today to place an order or learn more about our products.</p></div>
+            <div id="contentwithcarousel">
+                    <div id="portfolio-carousel"class="carousel slide carousel-fade" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img src = "./purpleblanket.jpeg" class="d-block" alt = "A crocheted blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./bear.jpeg" class="d-block" alt = "A crocheted bear tapestry">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./greyblanket.jpeg" class="d-block" alt = "A crocheted blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./blanket2.jpeg" class="d-block" alt = "A crocheted blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./babyblanket2.jpeg" class="d-block" alt = "A crocheted blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./bunny.jpeg" class="d-block" alt = "A crocheted bunny">
+                         </div>
+                         <div class="carousel-item">
+                              <img src = "./giraffe.jpeg" class="d-block" alt = "A crocheted giraffe">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./lionfrog.jpeg" class="d-block" alt = "A crocheted lion and frog">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./babyblanket.jpeg" class="d-block" alt = "A crocheted baby blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./babyblanket3.jpeg" class="d-block" alt = "A crocheted baby blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./blanket.jpeg" class="d-block" alt = "A crocheted blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./hatscarf.jpeg" class="d-block" alt = "A crocheted hat and scarf">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./shawl.jpeg" class="d-block" alt = "A crocheted shawl">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./shawl2.jpeg" class="d-block" alt = "A crocheted shawl">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./circleblanket.jpeg" class="d-block" alt = "A crocheted circle blanket">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./mandala.jpeg" class="d-block" alt = "A crocheted mandala">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./mandala2.jpeg" class="d-block" alt = "A crocheted mandala">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./flower.jpeg" class="d-block" alt = "A crocheted flower">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./babysweater.jpeg" class="d-block" alt = "A crocheted baby sweater">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./babydress.jpeg" class="d-block" alt = "A crocheted baby dress">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./tropicalpurse.jpeg" class="d-block" alt = "A crocheted purse">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./purse.jpeg" class="d-block" alt = "A crocheted purse">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./coinpurse.jpeg" class="d-block" alt = "A crocheted coin purse">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./flower2.jpeg" class="d-block" alt = "A crocheted flower">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./angel.jpeg" class="d-block" alt = "A crocheted angel">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./doily.jpeg" class="d-block" alt = "A crocheted doily">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./hat1.jpeg" class="d-block" alt = "A crocheted hat">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./hat2.jpeg" class="d-block" alt = "A crocheted hat">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./hat3.jpeg" class="d-block" alt = "A crocheted hat">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./hat4.jpeg" class="d-block" alt = "A crocheted hat">
+                         </div>
+                         <div class="carousel-item">
+                             <img src = "./heart.jpeg" class="d-block" alt = "A crocheted heart">
+                         </div>
+                             <div class="carousel-item">
+                                 <img src = "./sunflower.jpeg" class="d-block" alt = "A crocheted sunflower">
+                             </div>
+                     </div>
+                  </div>
+            <p id="one">Stitchy Spirit is a small business that specializes in creating custom crocheted <a href="./projects.html">products</a>. We offer a wide variety of items, including stuffed animals, blankets, hats, scarves, and more. Our products are made with high-quality materials and are designed to last.</p> 
+            <p id="two">Whether you're looking for a unique gift or just want to treat yourself, Stitchy Spirit can make your vision come to life. <a href="./contact.html">Contact</a> us today to place an order or learn more about our products.</p></div>
             <hr />
             <div id="artist">
             <h1>About the Artist</h1>
             <img src="./photo.jpeg" alt="Photo of the Artist">
             <p>My name is Victoria. I am a homeschooling mom, U.S. Air Force Veteran, and M.S. Data Science Student.  I love what I do. I started crocheting in 2014 as a way to cope with the struggle of returning from service after being medically retired.</p>
-            <p>I learned to crochet by following along with YouTube videos until I got the hang of it. Little did I know, I would fall in love with the art. It has since become more than a hobby, and now provides for my family.</p>
+            <p>I learned to crochet by following along with YouTube videos until I got the hang of it. Who knew I would fall in love with the art. It has since become more than a hobby, and now provides for my family.</p>
             <p>Check out my <a href="./projects.html">portfolio</a>!</p></div>
           </div>
           <footer>
