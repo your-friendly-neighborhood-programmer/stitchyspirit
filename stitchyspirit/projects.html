@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Lobster&family=Niconne&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .container-fluid {
+                background-color: rgb(130, 36, 79);
+                height: 120px;
+            }
+            .navbar-brand {
+                color: rgb(232, 178, 208);
+                font-family: "Charmonman", cursive;
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            .navbar-toggler {
+                background-color:rgb(232, 178, 208);
+                color:rgb(130, 36, 79);
+                border: 2px solid black;
+                box-shadow: 3px 3px 3px black;
+                position: relative;
+            }
+            .navbar-toggler:hover {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .nav-link {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                font-family: "Lobster", cursive;
+                font-size: 1.7rem;
+                color:rgb(130, 36, 79);
+                background-color:rgb(232, 178, 208);
+                width: 180px;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px black;
+                z-index: 1;
+            }
+            .nav-link:hover {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .nav-link.active {
+                color:rgb(232, 178, 208);
+                background-color:rgb(150, 82, 114);
+            }
+            .navbar-nav {
+                gap: 80px;
+                margin: auto;
+                z-index: 1;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                border: 2px solid rgb(255, 233, 245);
+                border-radius: 15%;
+                position: relative;
+                left: -2px;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-image: url("./backgroundimage.png");
+                gap: 30px;
+                background-size: cover;
+                padding: 20px;
+            }
+            footer {
+                background-color:rgb(130, 36, 79);
+                color:rgb(255, 233, 245);
+                text-align: center;
+            }
+            footer a {
+                color:rgb(255, 233, 245);
+            }
+            footer a:hover {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./about.html">Stitchy Spirit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="./about.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="./projects.html">Portfolio</a>
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+          <div class = "gallery">
+            <img src = "./bear.jpeg" alt = "A crocheted bear tapestry">
+            <img src = "./greyblanket.jpeg" alt = "A crocheted blanket">
+            <img src = "./blanket2.jpeg" alt = "A crocheted blanket">
+            <img src = "./babyblanket2.jpeg" alt = "A crocheted baby blanket">
+            <img src = "./bunny.jpeg" alt = "A crocheted bunny">
+            <img src = "./giraffe.jpeg" alt = "A crocheted giraffe">
+            <img src = "./lionfrog.jpeg" alt = "A crocheted lion and frog">
+            <img src = "./purpleblanket.jpeg" alt = "A crocheted blanket">
+            <img src = "./babyblanket.jpeg" alt = "A crocheted baby blanket">
+            <img src = "./babyblanket3.jpeg" alt = "A crocheted baby blanket">
+            <img src = "./blanket.jpeg" alt = "A crocheted blanket">
+            <img src = "./hatscarf.jpeg" alt = "A crocheted hat and scarf">
+            <img src = "./shawl.jpeg" alt = "A crocheted shawl">
+            <img src = "./shawl2.jpeg" alt = "A crocheted shawl">
+            <img src = "./circleblanket.jpeg" alt = "A crocheted circle blanket">
+            <img src = "./mandala.jpeg" alt = "A crocheted mandala">
+            <img src = "./mandala2.jpeg" alt = "A crocheted mandala">
+            <img src = "./flower.jpeg" alt = "A crocheted flower">
+            <img src = "./babysweater.jpeg" alt = "A crocheted baby sweater">
+            <img src = "./babydress.jpeg" alt = "A crocheted baby dress">
+            <img src = "./tropicalpurse.jpeg" alt = "A crocheted purse">
+            <img src = "./purse.jpeg" alt = "A crocheted purse">
+            <img src = "./coinpurse.jpeg" alt = "A crocheted coin purse">
+            <img src = "./flower2.jpeg" alt = "A crocheted flower">
+            <img src = "./angel.jpeg" alt = "A crocheted angel">
+            <img src = "./doily.jpeg" alt = "A crocheted doily">
+            <img src = "./hat1.jpeg" alt = "A crocheted hat">
+            <img src = "./hat2.jpeg" alt = "A crocheted hat">
+            <img src = "./hat3.jpeg" alt = "A crocheted hat">
+            <img src = "./hat4.jpeg" alt = "A crocheted hat">
+            <img src = "./heart.jpeg" alt = "A crocheted heart">
+            <img src = "./sunflower.jpeg" alt = "A crocheted sunflower">
+        </div>
+
+          <footer>
+            <h3 style="font-family: 'Charmonman', cursive; font-weight: bold; padding: 10px;">Stitchy Spirit</h3>
+            <p>Text: <a href = "sms:+19495720626">+1-949-572-0626</a></p>
+            <p>Call: <a href="tel:+19495720626">+1-949-572-0626</a></p>
+            <p>Email: <a href = "mailto:contact@stitchyspirit.com">contact@stitchyspirit.com</a></p>
+            <p>Copyright © 2024 Stitchy Spirit. All Rights Reserved.</p>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
