@@ -184,14 +184,13 @@
           
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
           
-          <!-- EmailJS library for sending emails directly from the browser -->
+          
           <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
           
           <script type="text/javascript">
             (function() {
-                // Initialize EmailJS with your public key
-                // You need to sign up on https://www.emailjs.com/ to get your own Public Key
-                emailjs.init("P45lSDdH5pEiQxYui"); // Replace with your actual EmailJS Public Key
+                
+                emailjs.init("P45lSDdH5pEiQxYui"); 
                 
                 document.getElementById('contactForm').addEventListener('submit', function(event) {
                     event.preventDefault();
@@ -199,12 +198,11 @@
                     const formResponse = document.getElementById('formResponse');
                     const submitBtn = document.getElementById('submitBtn');
                     
-                    // Change button text and disable it during submission
+                    
                     submitBtn.textContent = 'Sending...';
                     submitBtn.disabled = true;
                     
-                    // EmailJS expects a specific format for the parameters
-                    // The parameters must match your EmailJS template variables
+                    
                     const templateParams = {
                         from_name: document.getElementById('name').value,
                         from_email: document.getElementById('email').value,
@@ -212,9 +210,6 @@
                         message: document.getElementById('message').value
                     };
                     
-                    // Send the email using EmailJS
-                    // service_id: This is your EmailJS service ID (e.g., gmail, outlook, etc.)
-                    // template_id: This is your EmailJS email template ID
                     emailjs.send('service_qruyy0w', 'template_g23rfzp', templateParams)
                         .then(function(response) {
                             console.log('SUCCESS!', response.status, response.text);
@@ -229,7 +224,7 @@
                             formResponse.style.display = 'block';
                         })
                         .finally(function() {
-                            // Reset button
+                            
                             submitBtn.textContent = 'Send Message';
                             submitBtn.disabled = false;
                         });
