@@ -1,4 +1,4 @@
-<h1><a href = "./stitchyspirit/index.html">Stitchy Spirit</a></h1>
+<h1><a href = "https://your-friendly-neighborhood-programmer.github.io/stitchyspirit/stitchyspirit/index.html">Stitchy Spirit</a></h1>
 
 # Stitchy Spirit Website
 
